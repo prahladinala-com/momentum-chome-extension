@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tab</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body id="image">
+    <!-- <div class="text-container container">
+      <div class="text-wrapper row">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="w-100"></div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+      </div>
+    </div> -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12 borders">
+          <h2>🕐 Analog Clock 🕐</h2>
+          <div class="d-flex align-items-center">
+            <canvas id="canvas"> </canvas>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 borders">
+          <h2>👨‍💻 Type Master 👩‍💻</h2>
+          <small class="lead">Type the following:</small>
+          <h1 id="word"></h1>
+
+          <input
+            type="text"
+            id="text"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Type the word here..."
+          />
+          <p class="time-container lead">
+            Time left: <span id="time">10s</span>
+          </p>
+          <p class="score-container lead">Score: <span id="score">0</span></p>
+          <div class="end-game-container" id="end-game-container"></div>
+          <button onclick="location.reload()" class="btn btn-block btn-warning">
+            Play Again
+          </button>
+        </div>
+        <div class="col-md-4 col-12 borders">
+          <h2>#️⃣ Number Guesser #️⃣</h2>
+
+          <p>
+            Guess a number between <span class="min-num"></span> and
+            <span class="max-num"></span>
+          </p>
+          <input
+            type="number"
+            id="guess-input"
+            class="form-control"
+            autocomplete="off"
+            placeholder="Enter your guess..."
+          />
+          <br />
+          <input
+            class="btn btn-block btn-warning"
+            type="submit"
+            value="Submit"
+            id="guess-btn"
+          />
+          <p class="message lead"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+    <script src="./script/application.js"></script>
+  </body>
+</html>
